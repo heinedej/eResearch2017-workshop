@@ -1,0 +1,747 @@
+    1  apt update
+    2  apt upgrade
+    3  apt remove linux-headers-3.16.0-62 linux-headers-3.16.0-62-generic linux-image-3.16.0-62-generic linux-image-3.16.0-77-generic linux-image-virtual-lts-utopic linux-headers-3.16.0-62 linux-headers-3.16.0-62-generic linux-headers-generic-lts-utopic linux-headers-virtual-lts-utopic linux-image-3.16.0-62-generic linux-image-3.19.0-51-generic linux-image-virtual-lts-utopic linux-image-virtual-lts-vivid
+    4  apt upgrade
+    5  shutdown -r now
+    6  uptime
+    7  docker ps
+    8  history
+    9  docker service ls
+   10  docker ps -a
+   11  docker images
+   12  ls -l
+   13  more docker-compose.yaml 
+   14  history
+   15  docker ps -a
+   16  vi docker-compose.yaml 
+   17  ls -l
+   18  docker stack deploy --compose-file=docker-compose.yaml minio_stack
+   19  docker service ls
+   20  docker service ps minio_stack_minio1
+   21  more docker-compose.yaml 
+   22  docker service ps minio_stack_minio1
+   23  docker service ls
+   24  docker service rm minio_stack_minio3 minio_stack_minio1 minio_stack_minio2 minio_stack_minio4
+   25  docker service ls
+   26  more docker-compose.yaml 
+   27  docker service ls
+   28  docker sservice ls
+   29  docker service ls
+   30  dokcer service logs minio
+   31  docker service logs minio
+   32  docker service ps minio
+   33  docker logs is9r3i73ip18
+   34  docker logs minio.2a4glj67pyg1oyqe92yqa81pk
+   35  docker logs minio.2
+   36  docker ps
+   37  docker logs ed95285ce018
+   38  ls -l
+   39  more docker-compose.yaml 
+   40  docker service ps
+   41  docker service ps minio
+   42  more docker-compose.yaml 
+   43  docker service ps minio
+   44  docker logs xe0a2tg9h8e9
+   45  docker ps
+   46  docker logs 8cd9e2d955b8
+   47  vi docker-compose.yaml 
+   48  docker service ls
+   49  docker stack deploy --compose-file=docker-compose.yaml minio_stack
+   50  docker stack rm minio_stack
+   51  docker stack ps
+   52  docker stack ls
+   53  docker service ls
+   54  vi docker-compose.yaml 
+   55  docker stack deploy --compose-file=docker-compose.yaml minio_stack
+   56  more docker-compose.yaml 
+   57  docker service ls
+   58  docker service ps minio_stack_minio2
+   59  docker stack deploy --compose-file=docker-compose.yaml minio_stack
+   60  vi docker-compose.yaml 
+   61  docker stack deploy --compose-file=docker-compose.yaml minio_stack
+   62  docker serivce ls
+   63  docker serice ls
+   64  docker service ls
+   65  docker ps
+   66  docker logs 4427d1d70a82
+   67  docker ps
+   68  docker logs 317f429019ab
+   69  docker logs -f 4427d1d70a82
+   70  docker stack ls
+   71  docker stack rm minio_stack
+   72  rm docker-compose.yaml 
+   73  wget https://raw.githubusercontent.com/minio/minio/master/docs/orchestration/docker-swarm/docker-compose.yaml
+   74  ls -l
+   75  docker stack deploy --compose-file=docker-compose.yaml minio_stack
+   76  docker stack ps
+   77  docker stack ps minio_stack
+   78  docker service ps minio_stack_minio4.1
+   79  docker service ps minio_stack_minio4
+   80  docker ps skpf84ykp4nv
+   81  docker ps minio_stack_minio4
+   82  docker ps minio_stack_minio4.1
+   83  docker service ps minio_stack_minio4.1
+   84  docker service ls
+   85  docker service ps minio_stack_minio4
+   86  docker service logs minio_stack_minio4
+   87  docker service ps minio_stack_minio4
+   88  docker ps
+   89  docker logs fe4595e863f3
+   90  docker logs fe4595e863f3|more
+   91  vi docker-compose.yaml 
+   92  history
+   93  docker stack deploy --compose-file=docker-compose.yaml minio_stack
+   94  docker ps
+   95  docker logs 9df7379bfd1c
+   96  docker run --env aws_key=AKIAIOSFODNN7EXAMPLE --env aws_secret=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY --env host_base=srvuburan028.uct.ac.za:9001 garland/docker-s3cmd ls s3://
+   97  docker run ti --env aws_key=AKIAIOSFODNN7EXAMPLE --env aws_secret=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY --env host_base=srvuburan028.uct.ac.za:9001 garland/docker-s3cmd bash
+   98  docker run -ti --env aws_key=AKIAIOSFODNN7EXAMPLE --env aws_secret=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY --env host_base=srvuburan028.uct.ac.za:9001 garland/docker-s3cmd bash
+   99  docker run -ti --env aws_key=AKIAIOSFODNN7EXAMPLE --env aws_secret=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY --env host_base=srvuburan028.uct.ac.za:9001 garland/docker-s3cmd sh
+  100  docker run -ti --env aws_key=AKIAIOSFODNN7EXAMPLE --env aws_secret=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY --env host_base=srvuburan028.uct.ac.za:9001 --env cmd=interactive garland/docker-s3cmd sh
+  101  s3cmd
+  102  vi ~/.s3cfg
+  103  docker run -ti --env aws_key=AKIAIOSFODNN7EXAMPLE --env aws_secret=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY --env host_base=srvuburan028.uct.ac.za:9001 --env cmd=interactive -v ~/.s3cfg:~/.s3cfg garland/docker-s3cmd sh
+  104  docker run -ti --env aws_key=AKIAIOSFODNN7EXAMPLE --env aws_secret=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY --env host_base=srvuburan028.uct.ac.za:9001 --env cmd=interactive -v ~/.s3cfg:/root/.s3cfg garland/docker-s3cmd sh
+  105  \\
+  106  ls -l
+  107  wget https://github.com/s3tools/s3cmd/releases/download/v1.6.1/s3cmd-1.6.1.tar.gz
+  108  tar tvfz s3cmd-1.6.1.tar.gz 
+  109  tar xvfz s3cmd-1.6.1.tar.gz 
+  110  cd s3cmd-1.6.1/
+  111  ls -l
+  112  file s3cmd
+  113  more INSTALL 
+  114  cp s3cmd /usr/local/bin
+  115  s3cmd
+  116  s3cmd ls s3://
+  117  more INSTALL 
+  118  python setup.py install
+  119  ls -l
+  120  python setup.py install
+  121  more INSTALL 
+  122  apt-get install python-setuptools
+  123  python setup.py install
+  124  which s3cmd
+  125  s3cmd ls s3://
+  126  s3cmd -d ls s3://
+  127  cd
+  128  ls -la
+  129  vi .s3cfg
+  130  s3cmd -d ls s3://
+  131  s3cmd ls s3://
+  132  docker run -ti --env aws_key=AKIAIOSFODNN7EXAMPLE --env aws_secret=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY --env host_base=srvuburan028.uct.ac.za:9001 --env cmd=interactive -v ~/.s3cfg:/root/.s3cfg garland/docker-s3cmd ls s3://
+  133  docker run -ti --env aws_key=AKIAIOSFODNN7EXAMPLE --env aws_secret=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY --env host_base=srvuburan028.uct.ac.za:9001 --env cmd=interactive -v ~/.s3cfg:/root/.s3cfg garland/docker-s3cmd s3cmd ls s3://
+  134  docker run -ti -v ~/.s3cfg:/root/.s3cfg garland/docker-s3cmd s3cmd ls s3://
+  135  ls -l
+  136  docker run -ti -v ~/.s3cfg:/root/.s3cfg garland/docker-s3cmd s3cmd put docker-compose.yaml s3://
+  137  docker run -ti -v ~/.s3cfg:/root/.s3cfg garland/docker-s3cmd s3cmd put docker-compose.yaml s3://docker-compose.yaml
+  138  docker run -ti -v ~/.s3cfg:/root/.s3cfg -v /root/docker-compose.yaml:/root/docker-compose.yaml: garland/docker-s3cmd s3cmd put /root/docker-compose.yaml s3://docker-compose.yaml
+  139  docker run -ti -v ~/.s3cfg:/root/.s3cfg -v /root/docker-compose.yaml:/root/docker-compose.yaml: garland/docker-s3cmd s3cmd put /root/docker-compose.yaml s3://docker/docker-compose.yaml
+  140  docker plugin install minio/minfs
+  141  ls -l
+  142  docker volume ls
+  143  more docker-compose.yaml 
+  144  docker volume create -d minio/minfs --name minfsvol -o endpoint=http://srvuburan028.uct.ac.za:9001 -o access-key=AKIAIOSFODNN7EXAMPLE -o secret-key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY -o bucket=docker
+  145  docker volume ls
+  146  docker volume inspect minfsvol
+  147  docker run -ti -v minfsvol:/volume alpine sh
+  148  docker run -dp 8787:8787 -v minfsvol:/home/rstudio -e ROOT=TRUE rocker/hadleyverse
+  149  docker ps
+  150  docker exec -ti 584d8c0c4fb8 bash
+  151  docker ps
+  152  docker rm -f 584d8c0c4fb8
+  153  docker service create rstudio -p 8787:8787 -v minfsvol:/home/rstudio/minfsvol -e ROOT=TRUE rocker/hadleyverse
+  154  docker service create --name rstudio -p 8787:8787 -v minfsvol:/home/rstudio/minfsvol -e ROOT=TRUE rocker/hadleyverse
+  155  docker run -dp 8787:8787 -v minfsvol:/home/rstudio/minfsvol -e ROOT=TRUE rocker/hadleyverse
+  156  docker ps
+  157  docker exec -ti 5b7594e7358f bash
+  158  history
+  159  docker run -ti -v minfsvol:/volume alpine sh
+  160  mount
+  161  docker volume ls
+  162  docker inspect minfsvol
+  163  ls -l /mnt/minfsvol
+  164  docker ps
+  165  dokcer ps -a |more
+  166  docker ps -a |more
+  167  docker rm -f 7d72151a6ebe 5b7594e7358f c0a88685e092
+  168  history
+  169  docker run -ti -v ~/.s3cfg:/root/.s3cfg garland/docker-s3cmd s3cmd ls s3://
+  170  docker run -ti -v ~/.s3cfg:/root/.s3cfg garland/docker-s3cmd s3cmd ls s3://docker
+  171  docker run -ti -v ~/.s3cfg:/root/.s3cfg garland/docker-s3cmd s3cmd ls s3://bucket1
+  172  docker volume ls
+  173  docker volume rm minfsvol
+  174  docker volume inspect minfsvol
+  175  docker ps
+  176  docker ps -a |more
+  177  docker volume rm minfsvol
+  178  history
+  179  docker volume rm minfsvol
+  180  ls -l /run/docker/plugins/
+  181  ls -l /run/docker/plugins/d9370c5b4eeaf66a0abf9fe3030daeba094eba441c6f5bb77e03edd7ead0a8ce/
+  182  docker volume --help
+  183  docker volume prune
+  184  docker volume ls
+  185  docker ps |more
+  186  history
+  187  docker run -ti -v minfsvol:/volume alpine sh
+  188  docker volume create -d minio/minfs --name minfsvol2 -o endpoint=http://srvuburan028.uct.ac.za:9001 -o access-key=AKIAIOSFODNN7EXAMPLE -o secret-key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY -o bucket=docker
+  189  docker run -ti -v minfsvol2:/volume alpine sh
+  190  history
+  191  docker run -dp 8787:8787 -v minfsvol2:/home/rstudio/minfsvol -e ROOT=TRUE rocker/hadleyverse
+  192  docker run -ti -v minfsvol2:/volume alpine sh
+  193  history
+  194  curl --help
+  195  curl --help|more
+  196  curl https://nhorton.people.amherst.edu/r2/examples/graphics1.R -o graphics1.R
+  197  curl https://nhorton.people.amherst.edu/r2/examples/graphics1.R -ko graphics1.R
+  198  ls -l
+  199  more graphics1.R 
+  200  mkdir rstudio
+  201  cd rstudio
+  202  vi Dockeefile
+  203  vi Dockerfile
+  204  history
+  205  vi Dockerfile
+  206  docker built -t heinedej/rstudio:workshop .
+  207  docker build -t heinedej/rstudio:workshop .
+  208  vi Dockerfile 
+  209  docker build -t heinedej/rstudio:workshop .
+  210  vi Dockerfile 
+  211  docker build -t heinedej/rstudio:workshop .
+  212  vi Dockerfile 
+  213  docker build -t heinedej/rstudio:workshop .
+  214  docker ps
+  215  docker rm -f 1b04c8ac6b6c
+  216  history
+  217  docker run -dp 8787:8787 -v minfsvol2:/home/rstudio/minfsvol -e ROOT=TRUE heinedej/rstudio:workshop
+  218  vi Dockerfile
+  219  docker build -t heinedej/rstudio:workshop .
+  220  vi Dockerfile
+  221  docker build -t heinedej/rstudio:workshop .
+  222  docker ps
+  223  docker rm -f 3e437e632d16
+  224  docker service create --name=rstudio -dp 8787:8787 -v minfsvol2:/home/rstudio/minfsvol -e ROOT=TRUE heinedej/rstudio:workshop
+  225  docker service create --name=rstudio -p 8787:8787 -v minfsvol2:/home/rstudio/minfsvol -e ROOT=TRUE heinedej/rstudio:workshop
+  226  docker service create --help
+  227  docker service create --name rstudio -p 8787:8787 -e ROOT TRUE heinedej/rstudio:workshop
+  228  docker service create --name rstudio -p 8787:8787 -e ROOT=TRUE heinedej/rstudio:workshop
+  229  docker ps
+  230  docker service update --help
+  231  vi Dockerfile
+  232  docker build -t heinedej/rstudio:workshop .
+  233  docker service ls
+  234  docker service update --help
+  235  docker service update --image heinedej/rstudio:workshop rstudio
+  236  docker service rm rstudio
+  237  docker service create --name rstudio -p 8787:8787 -e ROOT=TRUE heinedej/rstudio:workshop
+  238  docker service ls
+  239  vi Dockerfile
+  240  docker build -t heinedej/rstudio:workshop .
+  241  vi Dockerfile
+  242  docker build -t heinedej/rstudio:workshop .
+  243  vi Dockerfile
+  244  docker build -t heinedej/rstudio:workshop .
+  245  vi Dockerfile
+  246  docker build -t heinedej/rstudio:workshop .
+  247  vi Dockerfile
+  248  docker build -t heinedej/rstudio:workshop .
+  249  vi Dockerfile
+  250  docker build -t heinedej/rstudio:workshop .
+  251  vi Dockerfile
+  252  docker build -t heinedej/rstudio:workshop .
+  253  vi Dockerfile
+  254  docker build -t heinedej/rstudio:workshop .
+  255  vi Dockerfile
+  256  docker build -t heinedej/rstudio:workshop .
+  257  vi Dockerfile
+  258  docker build -t heinedej/rstudio:workshop .
+  259  vi Dockerfile
+  260  docker build -t heinedej/rstudio:workshop .
+  261  vi Dockerfile
+  262  docker build -t heinedej/rstudio:workshop .
+  263  vi Dockerfile
+  264  docker build -t heinedej/rstudio:workshop .
+  265  vi Dockerfile
+  266  docker build -t heinedej/rstudio:workshop .
+  267  vi Dockerfile
+  268  docker build -t heinedej/rstudio:workshop .
+  269  vi Dockerfile
+  270  docker build -t heinedej/rstudio:workshop .
+  271  vi Dockerfile
+  272  docker build -t heinedej/rstudio:workshop .
+  273  vi Dockerfile
+  274  docker build -t heinedej/rstudio:workshop .
+  275  vi Dockerfile
+  276  docker build -t heinedej/rstudio:workshop .
+  277  vi Dockerfile
+  278  docker build -t heinedej/rstudio:workshop .
+  279  vi Dockerfile
+  280  docker build -t heinedej/rstudio:workshop .
+  281  vi Dockerfile
+  282  docker build -t heinedej/rstudio:workshop .
+  283  vi Dockerfile
+  284  docker build -t heinedej/rstudio:workshop .
+  285  vi Dockerfile 
+  286  cp Dockerfile Dockerfile.old
+  287  vi Dockerfile
+  288  docker build -t heinedej/rstudio:workshop .
+  289  vi Dockerfile
+  290  docker build -t heinedej/rstudio:workshop .
+  291  vi Dockerfile
+  292  docker build -t heinedej/rstudio:workshop .
+  293  vi Dockerfile
+  294  docker build -t heinedej/rstudio:workshop .
+  295  vi Dockerfile
+  296  docker build -t heinedej/rstudio:workshop .
+  297  apt-cache search openbugs
+  298  vi Dockerfile
+  299  docker build -t heinedej/rstudio:workshop .
+  300  vi Dockerfile
+  301  docker build -t heinedej/rstudio:workshop .
+  302  vi Dockerfile
+  303  docker build -t heinedej/rstudio:workshop .
+  304  vi Dockerfile
+  305  more Dockerfile
+  306  docker run -ti rocker/rstudio bash
+  307  vi Dockerfile
+  308  history
+  309  docker build -t heinedej/rstudio:workshop:0.1 .
+  310  docker build -t heinedej/rstudio-workshop:0.1 .
+  311  vi Dockerfile
+  312  docker build -t heinedej/rstudio-workshop:0.1 .
+  313  more Dockerfile
+  314  docker run -ti heinedej/rstudio-workshop:0.1 bash
+  315  vi Dockerfile
+  316  docker build -t heinedej/rstudio-workshop:0.2 .
+  317  docker run -ti heinedej/rstudio-workshop:0.2 bash
+  318  more Dockerfile
+  319  docker run -ti heinedej/rstudio-workshop:0.2 bash
+  320  more Dockerfile
+  321  vi Dockerfile
+  322  docker build -t heinedej/rstudio-workshop:0.3 .
+  323  more Dockerfile
+  324  docker run -ti heinedej/rstudio-workshop:0.3 bash
+  325  vi Dockerfile
+  326  docker build -t heinedej/rstudio-workshop:0.4 .
+  327  docker run -ti heinedej/rstudio-workshop:0.4 bash
+  328  more Dockerfile
+  329  docker run -ti heinedej/rstudio-workshop:0.4 bash
+  330  vi Dockerfile
+  331  docker run -ti heinedej/rstudio-workshop:0.5 bash
+  332  docker build -t heinedej/rstudio-workshop:0.5 .
+  333  more Dockerfile
+  334  docker run -ti heinedej/rstudio-workshop:0.5 bash
+  335  vi Dockerfile
+  336  docker build -t heinedej/rstudio-workshop:0.6 .
+  337  vi Dockerfile
+  338  docker run -ti heinedej/rstudio-workshop:0.6 bash
+  339  vi Dockerfile
+  340  docker build -t heinedej/rstudio-workshop:0.7 .
+  341  docker ps -a
+  342  docker rm a88f6b44c7b3 96a02d354e20 9ac61fe2a511 cacb0c4042cc a5f358d05db6 6e8ebfa2947a 797f6afddcdf 95f00d0a1911 97d4e4f0cda7
+  343  docker ps -a
+  344  docker rm a2c9dd7181f9 e71a8255ee19 528619be4559 1b282660d2c3 650636aadf9b a4ec83fa7264 a27f0effd78f
+  345  docker ps -a
+  346  docker rm 1847852b5ec7 13e06daecf11 5bfbaf3ecaa9 8cd9c1f6cfb9 2a9ac3641444 1c55cb2e2b31 5ae67bbea88d 038b701df84c 86cf1593572d 0cc4f70f7638
+  347  docker ps -a
+  348  docker purge
+  349  docker --help|more
+  350  docker container --help
+  351  docker container prune
+  352  docker ps -a
+  353  docker stop 1847852b5ec7
+  354  history
+  355  docker service create --name rstudio -p 8787:8787 -e ROOT=TRUE heinedej/rstudio-workshop:0.7
+  356  docker ps -a
+  357  docker rm 3ed22f2e8b28
+  358  docker ps
+  359  dockder rm -f 3ed22f2e8b28
+  360  docker rm -f 3ed22f2e8b28
+  361  docker service create --name rstudio -p 8787:8787 -e ROOT=TRUE heinedej/rstudio-workshop:0.7
+  362  docker service ls
+  363  docker service rm rstudio
+  364  docker service create --name rstudio -p 8787:8787 -e ROOT=TRUE heinedej/rstudio-workshop:0.7
+  365  docker ps
+  366  more Dockefile
+  367  more Dockerfile
+  368  vi Dockerfile
+  369  docker build -t heinedej/rstudio-workshop:0.8 .
+  370  docker service ls
+  371  docker service rm rstudio
+  372  docker service ls
+  373  docker ps
+  374  docker service ls
+  375  docker service rm nostalgic_torvalds
+  376  docker service ls
+  377  history
+  378  docker service create --name rstudio -p 8787:8787 -e ROOT=TRUE heinedej/rstudio-workshop:0.8
+  379  docker service ls
+  380  ls -l
+  381  rm Dockerfile.old
+  382  cd ..
+  383  mkdir eResearch2017-workshop
+  384  mv rstudio eResearch2017-workshop
+  385  cd eResearch2017-workshop/
+  386  ls -l
+  387  git init
+  388  git add
+  389  git --help |more
+  390  git add .
+  391  git commit -m "Dockerfile for rstudio image with all packages preinstalled"
+  392  git config --global user.name "Heine de Jager"
+  393  git config --global user.email heinedej@gmail.com
+  394  git commit -m "Dockerfile for rstudio image with all packages preinstalled"
+  395  git remote add origin remote repository https://github.com/heinedej/eResearch2017-workshop.git
+  396  git remote add origin https://github.com/heinedej/eResearch2017-workshop.git
+  397  git remote -v
+  398  git push origina master
+  399  git push origin master
+  400  git pull
+  401  git pull origin master
+  402  ls -la
+  403  ls -la rstudio/
+  404  git push origin master
+  405  ls -l
+  406  cd ..
+  407  ls -l
+  408  more docker-compose.yaml 
+  409  ls -l
+  410  cd s3cmd-1.6.1/
+  411  ls -l
+  412  cd ..
+  413  ls -l
+  414  ls -la
+  415  history |grep s3cmd
+  416  docker run -ti -d -v ~/.s3cfg:/root/.s3cfg garland/docker-s3cmd s3cmd ls s3://
+  417  docker run -ti -d -v ~/.s3cfg:/root/.s3cfg garland/docker-s3cmd s3cmd ls s3://docker
+  418  docker run -ti -d -v ~/.s3cfg:/root/.s3cfg garland/docker-s3cmd s3cmd ls s3://bucket1
+  419  pwd
+  420  ls -l
+  421  cd eResearch2017-workshop/rstudio/
+  422  more Dockerfile
+  423  cd ..
+  424  git clone https://github.com/BioContainers/containers.git
+  425  cd containers/searchgui/
+  426  ls -l
+  427  cd 2.8.6/
+  428  ls -l
+  429  more Dockerfile
+  430  cd 
+  431  docker pull metalnx/metalnx-web
+  432  docker search metalnx-web
+  433  docker pull metalnx/metalnx-web:1.1.0-latest
+  434  docker run -d -p 8080:8080 -e IRODS_HOST="srvcntiro001.uct.ac.za" -e IRODS_PORT=1247 -e IRODS_ZONE=BioNetZone -e IRODS_USER=irods -e IRODS_PASS=UgCrT1D metalnx/metalnx-web:1.1.0-latest
+  435  docker ps
+  436  docker logs dc07a2aded19
+  437  docker logs dc07a2aded19|more
+  438  docker ps
+  439  docker exec -ti dc07a2aded19 bash
+  440  docker ps
+  441  docker rm -f 0eee9cf4bbcf
+  442  docker ps
+  443  more Dockerfile
+  444  ls -l
+  445  cd rstudio
+  446  more Dockerfile
+  447  growfs --help
+  448  cd 
+  449  git clone https://github.com/darabi/docker-openwrt-x64.git
+  450  cd docker-openwrt-x64/
+  451  ls -l
+  452  more Dockerfile 
+  453  docker built -t docker-openwrt .
+  454  docker build -t docker-openwrt .
+  455  more Dockerfile
+  456  docker service create openwrt -p 9001:80 docker-openwrt
+  457  docker service ls
+  458  docker service rm wizardly_poitras
+  459  docker service create --name openwrt -p 9001:80 docker-openwrt
+  460  docker service create --name openwrt -p 8080:80 docker-openwrt
+  461  docker service ls
+  462  docker service ps openwrt
+  463  docker service rm openwrt
+  464  docker images |more
+  465  docker service create --name openwrt -p 8080:80 docker-openwrt:latest
+  466  docker service ls
+  467  docker service ps openwrt
+  468  docker service rm openwrt
+  469  docker run --name openwrt -p 8080:80 docker-openwrt:latest
+  470  docker run --name openwrt -p 8081:80 docker-openwrt:latest
+  471  docker rm openwrt
+  472  docker ps
+  473  docker run --name openwrt -p 8081:80 docker-openwrt:latest
+  474  docker ps -a
+  475  docker logs 57e052e3c964
+  476  docker ps
+  477  docker run -ti --name openwrt -p 8081:80 docker-openwrt:latest sh
+  478  docker ps -a 
+  479  docker rm 57e052e3c964
+  480  docker run -ti --name openwrt -p 8081:80 docker-openwrt:latest sh
+  481  docker ps
+  482  docker ps -a |more
+  483  docker rm 63767971169c
+  484  cd
+  485  git clone https://github.com/x-drum/docker-openwrt.git
+  486  cd docker-openwrt
+  487  ls -l
+  488  cd 15.05
+  489  ls -l
+  490  docker images |grep wrt
+  491  docker built -t openwrt-x86 .
+  492  docker build -t openwrt-x86 .
+  493  docker images |more
+  494  docker run --name openwrt -p 8081:80 openwrt-x86 
+  495  docker run --name openwrt -p 8081:80 openwrt-x86 sh
+  496  pwd
+  497  ls -l
+  498  docker run -ti --name openwrt -p 8081:80 docker-openwrt:latest sh
+  499  docker ps -a
+  500  docker rm -f f1ff4a864385
+  501  xclock
+  502  apt-get install x11-apps
+  503  xclock
+  504  xeyes
+  505  xconsole
+  506  xcalc
+  507  docker ps
+  508  docker service ls
+  509  history
+  510  ls -la
+  511  cd eResearch2017-workshop/
+  512  ls -l
+  513  cd containers
+  514  ls -l
+  515  cd ../rstudio/
+  516  ls -l
+  517  more Dockeifle
+  518  more Dockerfile 
+  519  cd 
+  520  git clone --recursive https://github.com/jessfraz/.vim.git .vim
+  521  add-apt-repository ppa:neovim-ppa/stable
+  522  apt-get update
+  523  apt-get install neovim
+  524  vi /etc/apt/sources.list
+  525  vi /etc/apt/sources.list.d/neovim-ppa-stable-trusty.list 
+  526  apt-get update
+  527  apt-get install neovim
+  528  rm /etc/apt/sources.list.d/neovim-ppa-stable-trusty.list 
+  529  add-apt-repository ppa:neovim-ppa/stable
+  530  apt update
+  531  ls -l /etc |grep rel
+  532  cat /etc/lsb_rel
+  533  cat /etc/lsb-release 
+  534  ls -l
+  535  ls -la
+  536  ln -sf $HOME/.vim/vimrc $HOME/.vimrc
+  537  vim
+  538  cd eResearch2017-workshop/rstudio/
+  539  vi Dockerfile 
+  540  ls -lt
+  541  ls -la ~/.vim
+  542  ls -la ~/.vimrc
+  543  cd  ~/.vim
+  544  ls -la
+  545  ls -l autoload/
+  546  ls -l bundle
+  547  history
+  548  history|more
+  549  ls
+  550  cd eResearch2017-workshop/
+  551  ls -la
+  552  ls -l containers
+  553  ls -l
+  554  cd ..
+  555  ls -l
+  556  more docker-compose.yaml 
+  557  ls -l eResearch2017-workshop/
+  558  mkdir eResearch2017-workshop/minio
+  559  mv docker-compose.yaml eResearch2017-workshop/minio/
+  560  cd eResearch2017-workshop/
+  561  git push
+  562  ls -l
+  563  git add .
+  564  git push
+  565  history |grep git
+  566  git remote
+  567  git remote --help
+  568  git remote -v
+  569  ls -l
+  570  git add minio
+  571  git push
+  572  git commit
+  573  git push
+  574  ls -l
+  575  git rm containers
+  576  git push
+  577  git commit
+  578  git push
+  579  git rm --help
+  580  git rm -r containers
+  581  git rm -rf containers
+  582  git push
+  583  git commit
+  584  history |more
+  585  docker run -ti --env aws_key=AKIAIOSFODNN7EXAMPLE --env aws_secret=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY --env host_base=srvuburan028.uct.ac.za:9001 --env cmd=interactive
+  586  docker run -ti --env aws_key=AKIAIOSFODNN7EXAMPLE --env aws_secret=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY --env host_base=srvuburan028.uct.ac.za:9001 --env cmd=interactive  -v ~/.s3cfg:/root/.s3cfg garland/docker-s3cmd sh
+  587  history |more
+  588  docker volume ls
+  589  docker run -ti -v minfsvol2:/volume alpine sh
+  590  docker run -ti -v minfsvol2:/volume busybox sh
+  591  history |more
+  592  docker service ls
+  593  docker service rm minio_stack_minio1 rstudio minio_stack_minio2 minio_stack_minio3 minio_stack_minio4
+  594  docker service ls
+  595  docker ps
+  596  cd eResearch2017-workshop/
+  597  cd minio
+  598  ls- l
+  599  ls -l
+  600  docker images
+  601  docker rmi 9eff43c4759a 97d5c365dc7e eb17557bce3f fb887d3e0bfe b9947f21923f 651ebb782be5 979f01511038 e6833a36df34 72e979d8eb49 560e82e91afe f001df621fc8
+  602  docker images
+  603  docker rmi c226fd50d7db 6776ddcd2ea9 638da63baddf c284871e0be4 a3f43bf49425 aa3c6f865152 ebd3d11f18dc bfeb6cf4cda9 
+  604  docker images
+  605  ls -l
+  606  docker stack deploy --compose-file=docker-compose.yaml minio_stack
+  607  docker service ps
+  608  docker service ls
+  609  docker service pd minio_stack_minio1
+  610  docker service ps minio_stack_minio1
+  611  docker service logs minio_stack_minio1
+  612  docker service ls
+  613  docker service ps minio_stack_minio3
+  614  docker service ls
+  615  docker service ps minio_stack_minio3
+  616  docker logs s4fkvss0eaxo
+  617  docker logs 9vag3k3hs96d
+  618  docker service ps minio_stack_minio3
+  619  docker service ls
+  620  more docker-compose.yaml 
+  621  docker volume ls
+  622  docker run --env aws_key=AKIAIOSFODNN7EXAMPLE --env aws_secret=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY --env host_base=srvuburan028.uct.ac.za:9001 garland/docker-s3cmd ls s3://
+  623  docker run -ti --env aws_key=AKIAIOSFODNN7EXAMPLE --env aws_secret=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY --env host_base=srvuburan028.uct.ac.za:9001 --env cmd=interactive -v ~/.s3cfg:/root/.s3cfg garland/docker-s3cmd sh
+  624  docker run --env aws_key=AKIAIOSFODNN7EXAMPLE --env aws_secret=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY --env host_base=srvuburan028.uct.ac.za:9001 garland/docker-s3cmd s3cmd ls s3://
+  625  docker run -ti -v ~/.s3cfg:/root/.s3cfg garland/docker-s3cmd s3cmd put docker-compose.yaml s3://
+  626  docker run -ti -v ~/.s3cfg:/root/.s3cfg garland/docker-s3cmd s3cmd put docker-compose.yaml ls s3://
+  627  docker run -ti -v ~/.s3cfg:/root/.s3cfg garland/docker-s3cmd s3cmd ls s3://
+  628  docker run -ti -v ~/.s3cfg:/root/.s3cfg garland/docker-s3cmd s3cmd ls s3://docker
+  629  sl -l
+  630  ls -l
+  631  docker run -ti -v ~/.s3cfg:/root/.s3cfg -v /root/docker-compose.yaml:/root/docker-compose.yaml: garland/docker-s3cmd s3cmd put /root/docker-compose.yaml s3://docker/docker-compose.yaml
+  632  docker run -ti -v ~/.s3cfg:/root/.s3cfg -v /root/docker-compose.yaml:/root/eResearch2017-workshop/docker-compose.yaml: garland/docker-s3cmd s3cmd put /root/docker-compose.yaml s3://docker/docker-compose.yaml
+  633  docker run -ti -v ~/.s3cfg:/root/.s3cfg -v /root/eResearch2017-workshop/docker-compose.yaml:/root/docker-compose.yaml: garland/docker-s3cmd s3cmd put /root/docker-compose.yaml s3://docker/docker-compose.yaml
+  634  ls -l
+  635  docker run -ti -v ~/.s3cfg:/root/.s3cfg -v /root/eResearch2017-workshop/docker-compose.yaml:/root/docker-compose.yaml garland/docker-s3cmd s3cmd put /root/docker-compose.yaml s3://docker/docker-compose.yaml
+  636  docker run -ti -v ~/.s3cfg:/root/.s3cfg -v /root/eResearch2017-workshop/docker-compose.yaml:/root/docker-compose.yaml garland/docker-s3cmd sh
+  637  ls -l
+  638  docker run -ti -v ~/.s3cfg:/root/.s3cfg -v /root/eResearch2017-workshop/minio/docker-compose.yaml:/root/docker-compose.yaml garland/docker-s3cmd s3cmd put /root/docker-compose.yaml s3://docker/docker-compose.yaml
+  639  docker plugin ls
+  640  docker plugin rm d9370c5b4eea
+  641  docker volume ls
+  642  docker volume rm minfsvol
+  643  docker volume rm -f minfsvol
+  644  docker volume rm -f minfsvol2
+  645  docker volume ls
+  646  docker plugin rm d9370c5b4eea
+  647  docker plugin install minio/minfs
+  648  docker volume create -d minio/minfs --name minfsvol3  -o endpoint=http://srvuburan028.uct.ac.za:9001 -o access-key=AKIAIOSFODNN7EXAMPLE -o secret-key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY -o bucket=docker
+  649  docker volume ls
+  650  history |grep /volume
+  651  docker run -ti -v minfsvol3:/volume busybox sh
+  652  docker run -dp 8787:8787 -v minfsvol3:/home/rstudio -e ROOT=TRUE rocker/hadleyverse
+  653  docker ps
+  654  docker rm -f 844f444f54a3
+  655  docker service ls
+  656  docker service create --name rstudio -p 8787:8787 -v minfsvol3:/home/rstudio/minfsvol -e ROOT=TRUE rocker/hadleyverse
+  657  cd
+  658  git clone https://github.com/etianen/django-python3-ldap.git
+  659  pip install django-python3-ldap
+  660  apt-get install python-pip
+  661  pip install django-python3-ldap
+  662  cd django-python3-ldap/
+  663  ls -l
+  664  more setup.py 
+  665  ls -l
+  666  python setup.py
+  667  cd test
+  668  cd tests/
+  669  ls -l
+  670  vi settings.py
+  671  cd
+  672  ls -la
+  673  rm .vimrc
+  674  cd -
+  675  vi settings.py
+  676  cd 
+  677  ls -la
+  678  mv .vim .vim.old
+  679  cd -
+  680  vi settings.py
+  681  ldapsearch
+  682  apt-get install ldap-utils
+  683  ldpsearch --help
+  684  ldapsearch --help
+  685  ldapsearch -H ldap://msldap.uct.ac.za:389 -D CN=LDAP Bind Account,OU=Services,DC=wf,DC=uct,DC=ac,DC=za -Z -b ou=Staff,ou=UCT,dc=wf,dc=uct,dc=ac,dc=za
+  686  ldapsearch -H ldap://msldap.uct.ac.za:389 -D CN=LDAP Bind Account,OU=Services,DC=wf,DC=uct,DC=ac,DC=za -Z -b ou=Staff,ou=UCT,dc=wf,dc=uct,dc=ac,dc=za -w 'WFb1nd!@#$'
+  687  ldapsearch -H ldap://msldap.uct.ac.za:389 -x -b ou=Staff,ou=UCT,dc=wf,dc=uct,dc=ac,dc=za
+  688  ldapsearch --help
+  689  ldapsearch -H ldap://msldap.uct.ac.za:389 -x -b ou=Staff,ou=UCT,dc=wf,dc=uct,dc=ac,dc=za -B "CN=LDAP Bind Account,OU=Services,DC=wf,DC=uct,DC=ac,DC=za"
+  690  ldapsearch -H ldap://msldap.uct.ac.za:389 -x -b ou=Staff,ou=UCT,dc=wf,dc=uct,dc=ac,dc=za -B "CN=LDAP Bind Account,OU=Services,DC=wf,DC=uct,DC=ac,DC=za" -W
+  691  ldapsearch -H ldap://msldap.uct.ac.za:389 -b ou=Staff,ou=UCT,dc=wf,dc=uct,dc=ac,dc=za -B CN=LDAP Bind Account,OU=Services,DC=wf,DC=uct,DC=ac,DC=za -W
+  692  ldapsearch -H ldap://msldap.uct.ac.za:389 -b 'ou=Staff,ou=UCT,dc=wf,dc=uct,dc=ac,dc=za' -B 'CN=LDAP Bind Account,OU=Services,DC=wf,DC=uct,DC=ac,DC=za' -W
+  693  ldapsearch -H ldap://msldap.uct.ac.za:389 -b 'ou=Staff,ou=UCT,dc=wf,dc=uct,dc=ac,dc=za' -D 'CN=LDAP Bind Account,OU=Services,DC=wf,DC=uct,DC=ac,DC=za' -W
+  694  ldapsearch -H ldap://msldap.uct.ac.za:389 -b 'ou=Staff,ou=UCT,dc=wf,dc=uct,dc=ac,dc=za' -x
+  695  ldapsearch -H ldap://msldap.uct.ac.za:389 -b 'ou=Staff,ou=UCT,dc=wf,dc=uct,dc=ac,dc=za' -D 'CN=LDAP Bind Account,OU=Services,DC=wf,DC=uct,DC=ac,DC=za' -W
+  696  cd
+  697  ls -l
+  698  cd eResearch2017-workshop/
+  699  ls -l
+  700  cd rstudio
+  701  history
+  702  docker ps
+  703  docker service create --name=rstudio -p 8787:8787 -v minfsvol3:/home/rstudio/minfsvol -e ROOT=TRUE heinedej/rstudio:workshop
+  704  docker service create --name rstudio -p 8787:8787 -e ROOT TRUE heinedej/rstudio:workshop
+  705  docker service create --name rstudio -p 8787:8787 -e ROOT=TRUE heinedej/rstudio:workshop
+  706  docker service ls
+  707  docker node ls
+  708  docker service ls
+  709  docker service ps rstudio
+  710  docker images
+  711  ls -l
+  712  docker build -t heinedej/rstudio:workshop .
+  713  docker images
+  714  docker service ps rstudio
+  715  docker volume ls
+  716  docker volume inspect minfsvol3 |more
+  717  df
+  718  ls -l /mnt/minfsvol3
+  719  mount
+  720  docker volume ls
+  721  docker service update     --mount-add       type=volume,source=other-volume,target=/somewhere-else \
+  722  docker service update  --mount-add type=volume,source=minfsvol3,target=/home/rstudio/minfsvol3 rstudio
+  723  docker service ps
+  724  docker service ls
+  725  docker service ps rstudio
+  726  docker images
+  727  docker export heinedej/rstudio:workshop > /root/heinedej-rstudio-workshop.tar
+  728  docker export e07c7fe952cd > /root/heinedej-rstudio-workshop.tar
+  729  history
+  730  history |more
+  731  ls -la
+  732  cd eResearch2017-workshop/
+  733  ls -l
+  734  mkdir putty-key
+  735  git add putty-key
+  736  git commit
+  737  git push
+  738  ls -l
+  739  git --help
+  740  git log
+  741  touch putty-key/test
+  742  git commit
+  743  git add putty-key/
+  744  git commit
+  745  git push
+  746  history
+  747  history > history.txt
