@@ -1,0 +1,13 @@
+# Setup endpoint
+host_base = student99.154.114.10.176.nip.io:9901
+host_bucket = student99.154.114.10.176.nip.io:9901
+bucket_location = us-east-1
+use_https = False
+
+# Setup access keys
+access_key = AKIAIOSFODNN7EXAMPLE
+secret_key = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+
+# Enable S3 v4 signature APIs
+signature_v2 = False
+
