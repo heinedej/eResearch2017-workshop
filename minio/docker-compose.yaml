@@ -1,14 +1,14 @@
 version: '3'
 
 services:
-  minio1:
+  minio9901:
     image: minio/minio:RELEASE.2017-03-16T21-50-32Z
     volumes:
-      - minio1-data:/export
+      - minio9901-data:/export
     ports:
-      - "9001:9000"
+      - "9901:9000"
     networks:
-      - minio_distributed
+      - minio_distributed_99
     environment:
       MINIO_ACCESS_KEY: AKIAIOSFODNN7EXAMPLE
       MINIO_SECRET_KEY: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
@@ -17,16 +17,16 @@ services:
         delay: 10s
         max_attempts: 10
         window: 60s
-    command: server http://minio1/export http://minio2/export http://minio3/export http://minio4/export
+    command: server http://minio9901/export http://minio9902/export http://minio9903/export http://minio9904/export
 
-  minio2:
+  minio9902:
     image: minio/minio:RELEASE.2017-03-16T21-50-32Z
     volumes:
-      - minio2-data:/export
+      - minio9902-data:/export
     ports:
-      - "9002:9000"
+      - "9902:9000"
     networks:
-      - minio_distributed
+      - minio_distributed_99
     environment:
       MINIO_ACCESS_KEY: AKIAIOSFODNN7EXAMPLE
       MINIO_SECRET_KEY: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
@@ -35,16 +35,16 @@ services:
         delay: 10s
         max_attempts: 10
         window: 60s
-    command: server http://minio1/export http://minio2/export http://minio3/export http://minio4/export
+    command: server http://minio9901/export http://minio9902/export http://minio9903/export http://minio9904/export
 
-  minio3:
+  minio9903:
     image: minio/minio:RELEASE.2017-03-16T21-50-32Z
     volumes:
-      - minio3-data:/export
+      - minio9903-data:/export
     ports:
-      - "9003:9000"
+      - "9903:9000"
     networks:
-      - minio_distributed
+      - minio_distributed_99
     environment:
       MINIO_ACCESS_KEY: AKIAIOSFODNN7EXAMPLE
       MINIO_SECRET_KEY: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
@@ -53,16 +53,16 @@ services:
         delay: 10s
         max_attempts: 10
         window: 60s
-    command: server http://minio1/export http://minio2/export http://minio3/export http://minio4/export
+    command: server http://minio9901/export http://minio9902/export http://minio9903/export http://minio9904/export
 
-  minio4:
+  minio9904:
     image: minio/minio:RELEASE.2017-03-16T21-50-32Z
     volumes:
-      - minio4-data:/export
+      - minio9904-data:/export
     ports:
-      - "9004:9000"
+      - "9904:9000"
     networks:
-      - minio_distributed
+      - minio_distributed_99
     environment:
       MINIO_ACCESS_KEY: AKIAIOSFODNN7EXAMPLE
       MINIO_SECRET_KEY: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
@@ -71,17 +71,17 @@ services:
         delay: 10s
         max_attempts: 10
         window: 60s
-    command: server http://minio1/export http://minio2/export http://minio3/export http://minio4/export
+    command: server http://minio9901/export http://minio9902/export http://minio9903/export http://minio9904/export
 
 volumes:
-  minio1-data:
+  minio9901-data:
 
-  minio2-data:
+  minio9902-data:
 
-  minio3-data:
+  minio9903-data:
 
-  minio4-data:
+  minio9904-data:
 
 networks:
-  minio_distributed:
+  minio_distributed_99:
     driver: overlay
