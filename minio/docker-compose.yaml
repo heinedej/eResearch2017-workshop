@@ -6,7 +6,7 @@ services:
     volumes:
       - minio9901-data:/export
     ports:
-      - "9901:9000"
+      - "8991:9000"
     networks:
       - minio_distributed_99
     environment:
@@ -24,7 +24,7 @@ services:
     volumes:
       - minio9902-data:/export
     ports:
-      - "9902:9000"
+      - "8992:9000"
     networks:
       - minio_distributed_99
     environment:
@@ -42,7 +42,7 @@ services:
     volumes:
       - minio9903-data:/export
     ports:
-      - "9903:9000"
+      - "8993:9000"
     networks:
       - minio_distributed_99
     environment:
@@ -60,7 +60,7 @@ services:
     volumes:
       - minio9904-data:/export
     ports:
-      - "9904:9000"
+      - "8994:9000"
     networks:
       - minio_distributed_99
     environment:
